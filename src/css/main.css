@@ -1,49 +1,89 @@
-body {
-  background-color: #2f3640;
-  padding: 0;
-  margin: 0;
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #2f3640;
 }
 
-.wrapper {
-  padding-top: 130px;
+.wrapper
+{
+    padding-top: 130px;
 }
 
-.road {
-  border: 3px dashed black;
-  margin-top: -5px;
+.road
+{
+    margin-top: -5px;
+    border: 3px dashed black;
 }
 
-.runner {
-  background-image: url("../img//png/spriteBoy.png");
-  width: 100px;
-  height: 135px;
-  animation: 0.8s walking infinite steps(8), 2s boyAnimate linear infinite;
+.runner
+{
+    width: 100px;
+    height: 135px;
+    -webkit-animation: .8s walking infinite steps(8), 2s boyAnimate linear infinite;
+            animation: .8s walking infinite steps(8), 2s boyAnimate linear infinite;
+    background-image: url('../img//png/spriteBoy.png');
 }
 
-@keyframes walking {
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: 862px;
-  }
+@-webkit-keyframes walking
+{
+    0%
+    {
+        background-position: 0;
+    }
+    100%
+    {
+        background-position: 862px;
+    }
 }
 
-@keyframes boyAnimate {
-  0% {
-    transform: translateX(-50px);
-  }
-  100% {
-    transform: translateX(862px);
-  }
+@keyframes walking
+{
+    0%
+    {
+        background-position: 0;
+    }
+    100%
+    {
+        background-position: 862px;
+    }
 }
 
-.footer {
-  margin-top: 20px;
-  text-align: center;
-  color: #D7835F;
-  font-family: 'Gaegu', cursive;
-  font-size: 25px;
-  text-transform: uppercase;
-  cursor: pointer;
+@-webkit-keyframes boyAnimate
+{
+    0%
+    {
+        -webkit-transform: translateX(-50px);
+                transform: translateX(-50px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(862px);
+                transform: translateX(862px);
+    }
+}
+
+@keyframes boyAnimate
+{
+    0%
+    {
+        -webkit-transform: translateX(-50px);
+                transform: translateX(-50px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(862px);
+                transform: translateX(862px);
+    }
+}
+
+.footer
+{
+    font-family: 'Gaegu', cursive;
+    font-size: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d7835f;
 }
