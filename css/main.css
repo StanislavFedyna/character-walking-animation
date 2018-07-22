@@ -18,11 +18,11 @@ body
 
 .runner
 {
-    width: 100px;
-    height: 135px;
-    -webkit-animation: .8s walking infinite steps(8), 2s boyAnimate linear infinite;
+            width: 100px;
+            height: 135px;
+            -webkit-animation: .8s walking infinite steps(8), 2s boyAnimate linear infinite;
             animation: .8s walking infinite steps(8), 2s boyAnimate linear infinite;
-    background-image: url('../img//png/spriteBoy.png');
+            background-image: url('../img//png/spriteBoy.png');
 }
 
 @-webkit-keyframes walking
@@ -58,9 +58,12 @@ body
     }
     100%
     {
-        -webkit-transform: translateX(862px);
-                transform: translateX(862px);
-    }
+                -webkit-transform: translateX(1350px);
+                transform: translateX(1350px);
+                -moz-transform: translateX(1350px);
+                -ms-transform: translateX(1350px);
+                -o-transform: translateX(1350px);
+}
 }
 
 @keyframes boyAnimate
@@ -72,9 +75,12 @@ body
     }
     100%
     {
-        -webkit-transform: translateX(862px);
-                transform: translateX(862px);
-    }
+                -webkit-transform: translateX(1350px);
+                transform: translateX(1350px);
+                -moz-transform: translateX(1350px);
+                -ms-transform: translateX(1350px);
+                -o-transform: translateX(1350px);
+}
 }
 
 .footer
